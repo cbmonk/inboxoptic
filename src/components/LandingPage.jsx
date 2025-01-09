@@ -1,5 +1,8 @@
 import Header from './Header';
-import ScanButton from './ScanButton';
+import GoogleScanButton from './GoogleScanButton';
+import OutlookScanButton from './OutlookScanButton';
+import YahooScanButton from './YahooScanButton';
+import ProtonMailScanButton from './ProtonMailScanButton';
 import Features from './Features';
 import SubscriptionList from './SubscriptionList';
 import { useSubscriptions } from '../context/SubscriptionContext';
@@ -11,7 +14,10 @@ export default function LandingPage() {
     <div className="min-h-screen w-screen bg-gradient-to-br from-emerald-50 to-emerald-100 font-['Inter']">
       <div className="w-full min-h-screen px-4 flex flex-col items-center justify-start pt-20">
         <Header />
-        <ScanButton scanInbox={scanInbox} isScanning={isScanning} />
+        <GoogleScanButton scanInbox={scanInbox} isScanning={isScanning} />
+        <OutlookScanButton scanInbox={scanInbox} isScanning={isScanning} />
+        <YahooScanButton scanInbox={scanInbox} isScanning={isScanning} />
+        <ProtonMailScanButton scanInbox={scanInbox} isScanning={isScanning} />
         <Features />
         <SubscriptionList subscriptions={subscriptions} />
       </div>
