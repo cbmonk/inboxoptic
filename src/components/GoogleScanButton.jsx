@@ -19,7 +19,7 @@ export default function GoogleScanButton() {
                   flex justify-center items-center gap-3 text-lg shadow-md hover:shadow-lg ${isScanning ? 'opacity-50' : ''} 
                   mb-4 w-48 h-12`} // Center logos and text
     >
-      <img src="/src/assets/gmail-logo.svg" alt="Google Logo" className="w-6 h-6" />
+      <img src="/assets/gmail-logo.svg" alt="Google Logo" className="w-6 h-6" />
       {isScanning ? 'Scanning...' : 'Gmail'}
     </button>
   );

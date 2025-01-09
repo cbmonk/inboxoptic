@@ -19,7 +19,7 @@ export default function YahooScanButton() {
                   flex justify-center items-center gap-3 text-lg shadow-md hover:shadow-lg ${isScanning ? 'opacity-50' : ''} 
                   mb-4 w-48 h-12`}
     >
-      <img src="/src/assets/yahoo-logo.svg" alt="Yahoo Logo" className="w-6 h-6" />
+      <img src="/assets/yahoo-logo.svg" alt="Yahoo Logo" className="w-6 h-6" />
       {isScanning ? 'Scanning...' : 'Yahoo'}
     </button>
   );

@@ -19,7 +19,7 @@ export default function ProtonMailScanButton() {
                   flex justify-center items-center gap-3 text-lg shadow-md hover:shadow-lg ${isScanning ? 'opacity-50' : ''} 
                   mb-4 w-48 h-12`}
     >
-      <img src="/src/assets/proton-logo.svg" alt="ProtonMail Logo" className="w-6 h-6" />
+      <img src="/assets/proton-logo.svg" alt="ProtonMail Logo" className="w-6 h-6" />
       {isScanning ? 'Scanning...' : 'Proton'}
     </button>
   );
