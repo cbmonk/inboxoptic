@@ -15,7 +15,7 @@ export default function ScanProgress() {
           }
           return prev + 10;
         });
-      }, 200);
+      }, 500);
 
       return () => clearInterval(interval);
     } else {
